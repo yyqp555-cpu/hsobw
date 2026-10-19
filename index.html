@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة أبو نمر للإعلانات الممولة - الترويج الاحترافي لكافة المنصات</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                        },
+                        dark: {
+                            bg: '#050811',
+                            card: '#0d1322',
+                            panel: '#131b2e',
+                            border: '#1e293b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Cairo', 'Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', 'Tajawal', sans-serif;
+            background-color: #050811;
+            color: #f1f5f9;
+            background-image: 
+                radial-gradient(at 10% 10%, rgba(234, 179, 8, 0.05) 0px, transparent 50%),
+                radial-gradient(at 90% 90%, rgba(139, 92, 246, 0.08) 0px, transparent 50%);
+        }
+        .glass-panel {
+            background: rgba(13, 19, 34, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card {
+            background: rgba(19, 27, 46, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .gold-glow {
+            box-shadow: 0 0 25px -5px rgba(234, 179, 8, 0.3);
+        }
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #fef08a 0%, #facc15 50%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050811;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-amber-500 selection:text-black pb-20 md:pb-0">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 glass-panel border-b border-slate-800/80 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-amber-500 via-yellow-400 to-amber-600 flex items-center justify-center text-slate-950 shadow-xl gold-glow font-black text-xl">
+                    <i class="fa-solid fa-crown"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-black tracking-wide gold-text-gradient leading-tight">منصة أبو نمر للإعلانات الممولة</h1>
+                    <span class="text-[11px] text-slate-400 font-bold block">إشراف وتطوير المطور أبو نمر</span>
+                </div>
+            </div>
+
+            <!-- Navigation Links Desktop -->
+            <nav class="hidden md:flex items-center gap-8 font-bold text-xs sm:text-sm text-slate-300">
+                <a href="#creator-section" class="hover:text-amber-400 transition">تجهيز الإعلان</a>
+                <a href="#calculator-section" class="hover:text-amber-400 transition">حاسبة الخصم والوصول</a>
+                <a href="#simulator-section" class="hover:text-amber-400 transition">معاينة الإعلان</a>
+                <a href="#official-networks" class="hover:text-amber-400 transition">الشبكات الرسمية</a>
+                <a href="#ads-feed" class="hover:text-amber-400 transition">سوق الإعلانات</a>
+            </nav>
+
+            <!-- WhatsApp Action Button -->
+            <a href="https://wa.me/905317327802?text=مرحباً%20أستاذ%20أبو%20نمر،%20أريد%20الاستفسار%20عن%20إطلاق%20حملة%20إعلانية%20ممولة" target="_blank" class="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-black px-5 py-2.5 rounded-xl text-xs sm:text-sm shadow-xl shadow-emerald-950/50 transition flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span class="hidden sm:inline">تواصل مع أبو نمر (00905317327802)</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Top Platform Bar -->
+    <div class="bg-slate-950/80 border-b border-slate-900 py-3 px-4 overflow-x-auto text-xs text-slate-300 flex items-center justify-around gap-6 whitespace-nowrap">
+        <div class="flex items-center gap-2"><i class="fa-brands fa-instagram text-pink-500 text-base"></i> <span>إنستغرام: استهداف المبيعات بدقة</span></div>
+        <div class="flex items-center gap-2"><i class="fa-brands fa-tiktok text-cyan-400 text-base"></i> <span>تيك توك: الانتشار الأسرع بأرخص التكاليف</span></div>
+        <div class="flex items-center gap-2"><i class="fa-brands fa-facebook text-blue-500 text-base"></i> <span>فيسبوك: الأفضل للخدمات المباشرة</span></div>
+        <div class="flex items-center gap-2"><i class="fa-brands fa-google text-red-500 text-base"></i> <span>جوجل: زبائن باحثون وجاهزون للشراء</span></div>
+        <div class="flex items-center gap-2"><i class="fa-brands fa-snapchat text-yellow-400 text-base"></i> <span>سناب شات: وصول واسع ومباشر</span></div>
+    </div>
+
+    <!-- Hero Header -->
+    <section class="relative py-14 lg:py-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6">
+            <span class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 text-amber-300 px-5 py-2 rounded-full text-xs font-black shadow-lg">
+                <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i> خيارك الاحترافي لإداره وإطلاق الحملات الإعلانية الممولة
+            </span>
+            <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
+                اختر منصتك، حدد ميزانيتك، <br class="hidden sm:inline">
+                وانشر إعلانك الممول <span class="gold-text-gradient">بإشراف المطور أبو نمر!</span>
+            </h2>
+            <p class="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto font-medium leading-relaxed">
+                منصة متكاملة تمكنك من معاينة وتجهيز إعلانك الممول واحتساب الوصول التقديري، ثم إرساله فوراً للمطور أبو نمر لإطلاقه رسمياً عبر مدراء الإعلانات.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Workspace Section -->
+    <section id="creator-section" class="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-8 items-start">
+
+            <!-- LEFT COLUMN: Ad Form & Campaign Options -->
+            <div class="lg:col-span-7 space-y-6">
+                
+                <!-- Step 1: Select Platform -->
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl space-y-5 border border-slate-800">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-base font-extrabold text-white flex items-center gap-3">
+                            <span class="w-7 h-7 rounded-xl bg-amber-500 text-slate-950 text-xs flex items-center justify-center font-black">1</span>
+                            اختر المنصة الإعلانية
+                        </h3>
+                        <span class="text-xs text-slate-400 font-semibold">تتغير المعاينة تلقائياً</span>
+                    </div>
+
+                    <div class="grid grid-cols-3 sm:grid-cols-6 gap-3" id="platformSelector">
+                        <button type="button" onclick="selectPlatform('instagram')" id="btn-instagram" class="platform-btn bg-slate-900 border-2 border-pink-500/80 p-3.5 rounded-2xl flex flex-col items-center gap-2 text-center transition">
+                            <i class="fa-brands fa-instagram text-2xl text-pink-500"></i>
+                            <span class="text-xs font-extrabold text-slate-200">إنستغرام</span>
+                        </button>
+                        <button type="button" onclick="selectPlatform('tiktok')" id="btn-tiktok" class="platform-btn bg-slate-900 border-2 border-slate-800 p-3.5 rounded-2xl flex flex-col items-center gap-2 text-center transition opacity-60 hover:opacity-100">
+                            <i class="fa-brands fa-tiktok text-2xl text-cyan-400"></i>
+                            <span class="text-xs font-extrabold text-slate-200">تيك توك</span>
+                        </button>
+                        <button type="button" onclick="selectPlatform('facebook')" id="btn-facebook" class="platform-btn bg-slate-900 border-2 border-slate-800 p-3.5 rounded-2xl flex flex-col items-center gap-2 text-center transition opacity-60 hover:opacity-100">
+                            <i class="fa-brands fa-facebook text-2xl text-blue-500"></i>
+                            <span class="text-xs font-extrabold text-slate-200">فيسبوك</span>
+                        </button>
+                        <button type="button" onclick="selectPlatform('google')" id="btn-google" class="platform-btn bg-slate-900 border-2 border-slate-800 p-3.5 rounded-2xl flex flex-col items-center gap-2 text-center transition opacity-60 hover:opacity-100">
+                            <i class="fa-brands fa-google text-2xl text-red-500"></i>
+                            <span class="text-xs font-extrabold text-slate-200">جوجل</span>
+                        </button>
+                        <button type="button" onclick="selectPlatform('snapchat')" id="btn-snapchat" class="platform-btn bg-slate-900 border-2 border-slate-800 p-3.5 rounded-2xl flex flex-col items-center gap-2 text-center transition opacity-60 hover:opacity-100">
+                            <i class="fa-brands fa-snapchat text-2xl text-yellow-400"></i>
+                            <span class="text-xs font-extrabold text-slate-200">سناب شات</span>
+                        </button>
+                        <button type="button" onclick="selectPlatform('telegram')" id="btn-telegram" class="platform-btn bg-slate-900 border-2 border-slate-800 p-3.5 rounded-2xl flex flex-col items-center gap-2 text-center transition opacity-60 hover:opacity-100">
+                            <i class="fa-brands fa-telegram text-2xl text-sky-400"></i>
+                            <span class="text-xs font-extrabold text-slate-200">تلغرام</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Campaign Goals & Budget Calculator -->
+                <div id="calculator-section" class="glass-panel p-6 sm:p-8 rounded-3xl space-y-5 border border-slate-800">
+                    <h3 class="text-base font-extrabold text-white flex items-center gap-3">
+                        <span class="w-7 h-7 rounded-xl bg-amber-500 text-slate-950 text-xs flex items-center justify-center font-black">2</span>
+                        هدف الحملة وحاسبة الميزانية والخصم
+                    </h3>
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 mb-2">هدف الحملة الإعلانية</label>
+                            <select id="campaignGoal" onchange="updateCalculator()" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs sm:text-sm text-white focus:outline-none focus:border-amber-500">
+                                <option value="messages">رسائل واتساب مباشر (مبيعات واستفسار)</option>
+                                <option value="reach">أقصى وصول ممكن (مشاهدات عالية)</option>
+                                <option value="followers">زيادة المتابعين والتفاعل</option>
+                                <option value="website">زيارات لموقع إلكتروني / صفحة هبوط</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 mb-2">العملة والمنطقة</label>
+                            <select id="currencySelect" onchange="updateCalculator()" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs sm:text-sm text-white focus:outline-none focus:border-amber-500">
+                                <option value="USD">الدولار الأمريكي (USD $)</option>
+                                <option value="TRY">الليرة التركية (TRY ₺)</option>
+                                <option value="SAR">الريال السعودي (SAR ﷼)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Budget Range Slider -->
+                    <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800 space-y-3">
+                        <div class="flex justify-between items-center text-xs font-bold">
+                            <span class="text-slate-300">الميزانية الإعلانية المحددة:</span>
+                            <span id="budgetValueDisplay" class="text-amber-400 text-lg font-black">20 $</span>
+                        </div>
+                        <input type="range" id="budgetRange" min="5" max="500" step="5" value="20" oninput="updateCalculator()" class="w-full accent-amber-500 h-2 bg-slate-800 rounded-lg cursor-pointer">
+                    </div>
+
+                    <!-- Calculator Results Display Box -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-1">
+                        <div class="bg-slate-950 border border-slate-800 p-3.5 rounded-2xl text-center">
+                            <span class="block text-[10px] text-slate-400 font-semibold mb-1">السعر الأصلي الرسمى</span>
+                            <span id="calcOriginalPrice" class="text-sm font-bold text-slate-500 line-through">25 $</span>
+                        </div>
+                        <div class="bg-slate-950 border border-amber-500/30 p-3.5 rounded-2xl text-center">
+                            <span class="block text-[10px] text-amber-400 font-bold mb-1">السعر مع خصم أبو نمر</span>
+                            <span id="calcDiscountPrice" class="text-sm sm:text-base font-black text-emerald-400">20 $</span>
+                        </div>
+                        <div class="col-span-2 sm:col-span-1 bg-slate-950 border border-slate-800 p-3.5 rounded-2xl text-center">
+                            <span class="block text-[10px] text-slate-400 font-semibold mb-1">الوصول التقديري</span>
+                            <span id="calcReach" class="text-sm font-black text-sky-400">5,000 - 12,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Ad Content Form -->
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl space-y-4 border border-slate-800">
+                    <h3 class="text-base font-extrabold text-white flex items-center gap-3">
+                        <span class="w-7 h-7 rounded-xl bg-amber-500 text-slate-950 text-xs flex items-center justify-center font-black">3</span>
+                        تفاصيل وتصميم الإعلان
+                    </h3>
+
+                    <form id="adCreationForm" onsubmit="handlePublishAd(event)" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 mb-1.5">اسم النشاط / الخدمة</label>
+                                <input type="text" id="adBrandName" oninput="updateLiveSimulator()" required placeholder="مثال: معلم دهان وديكورات" value="معلم دهان وصيانة عامة" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-amber-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 mb-1.5">المنطقة والجمهور المستهدف</label>
+                                <input type="text" id="adLocation" oninput="updateLiveSimulator()" required placeholder="مثال: بورصة" value="بورصة وكافة المناطق" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-amber-500">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 mb-1.5">عنوان الإعلان الجذاب</label>
+                            <input type="text" id="adTitle" oninput="updateLiveSimulator()" required placeholder="اكتب عنواناً يشد الانتباه" value="🔥 خدمات دهان وديكورات منزلية بأسعار منافسة!" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-amber-500">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 mb-1.5">نص وشرح الإعلان (Caption)</label>
+                            <textarea id="adCaption" rows="3" oninput="updateLiveSimulator()" required placeholder="اكتب التفاصيل والميزات ورقم الهاتف..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-amber-500">أفضل خدمات الدهان والديكور والصيانة العالية الجودة. تواصل معنا الآن للحصول على معاينة واستشارة مجانية فوراً عبر الواتساب!</textarea>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 mb-1.5">رقم الواتساب الخاص بك للزبائن</label>
+                                <input type="tel" id="adWhatsapp" oninput="updateLiveSimulator()" required placeholder="00905317327802" value="00905317327802" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-amber-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 mb-1.5">رابط صورة الإعلان (اختياري)</label>
+                                <input type="url" id="adImageUrl" oninput="updateLiveSimulator()" placeholder="ضع رابط الصورة أو اترك الافتراضي" value="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-amber-500">
+                            </div>
+                        </div>
+
+                        <!-- Direct WhatsApp Submission Button to Abu Nimer -->
+                        <button type="submit" class="w-full bg-gradient-to-r from-emerald-500 via-teal-600 to-amber-500 hover:opacity-95 text-white font-black py-4.5 rounded-2xl shadow-2xl shadow-emerald-950/60 transition text-sm flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>اعتماد الخصم وتأكيد الإعلان مع المطور أبو نمر</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN: Live Ad Preview Simulator -->
+            <div id="simulator-section" class="lg:col-span-5 lg:sticky lg:top-24 space-y-4">
+                <div class="glass-panel p-5 rounded-3xl border border-slate-800 shadow-2xl space-y-4">
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+                            <h3 class="text-xs sm:text-sm font-black text-white">محاكي الإعلان المباشر (Live Preview)</h3>
+                        </div>
+                        <span id="simulatorPlatformBadge" class="bg-pink-500/20 text-pink-400 border border-pink-500/30 text-[10px] font-bold px-3 py-1 rounded-full flex items-center gap-1">
+                            <i class="fa-brands fa-instagram"></i> إنستغرام
+                        </span>
+                    </div>
+
+                    <!-- Phone Frame Outer Wrapper -->
+                    <div class="bg-slate-950 p-3 sm:p-4 rounded-[2.5rem] border-4 border-slate-800 shadow-2xl max-w-sm mx-auto relative">
+                        <div class="w-20 h-3 bg-slate-800 rounded-full mx-auto mb-3"></div>
+
+                        <!-- SIMULATOR INNER CARD DISPLAY -->
+                        <div id="simulatorCard" class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 text-white font-sans text-xs shadow-inner">
+                            
+                            <div class="p-3 flex items-center justify-between border-b border-slate-800/80">
+                                <div class="flex items-center gap-2.5">
+                                    <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-500 to-yellow-400 p-0.5">
+                                        <div class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center font-bold text-[10px] text-amber-400" id="simAvatarInitials">
+                                            م
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-slate-100 flex items-center gap-1 leading-tight" id="simBrandName">
+                                            معلم دهان وصيانة عامة
+                                            <i class="fa-solid fa-circle-check text-amber-400 text-[10px]"></i>
+                                        </div>
+                                        <span class="text-[9px] text-slate-400 font-semibold block" id="simAdTag">إعلان ممول • Sponsored</span>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-ellipsis text-slate-400"></i>
+                            </div>
+
+                            <!-- Media Area -->
+                            <div class="relative bg-slate-950 aspect-square overflow-hidden group">
+                                <img id="simImage" src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80" alt="صورة الإعلان" class="w-full h-full object-cover">
+                                
+                                <div class="absolute top-2 right-2 bg-black/80 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] text-white font-bold flex items-center gap-1 border border-white/10" id="simPlatformTag">
+                                    <i class="fa-brands fa-instagram text-pink-500"></i> Feed
+                                </div>
+
+                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-3 pt-8 flex items-center justify-between">
+                                    <div>
+                                        <div class="text-[11px] font-extrabold text-white truncate max-w-[180px]" id="simTitle">🔥 خدمات دهان وديكورات بأسعار منافسة!</div>
+                                        <span class="text-[9px] text-amber-400 font-bold block" id="simLocation"><i class="fa-solid fa-location-dot"></i> بورصة وكافة المناطق</span>
+                                    </div>
+                                    <a id="simCtaBtn" href="https://wa.me/905317327802" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-black px-3 py-1.5 rounded-lg text-[10px] transition flex items-center gap-1 shadow-lg shadow-emerald-500/20">
+                                        <span>تواصل واتساب</span>
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Caption Footer Area -->
+                            <div class="p-3 space-y-2 bg-slate-900/90 text-slate-300 text-[11px]">
+                                <p class="line-clamp-2 leading-relaxed" id="simCaption">
+                                    أفضل خدمات الدهان والديكور والصيانة العالية الجودة. تواصل معنا الآن للحصول على معاينة واستشارة مجانية...
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Official Networks Section -->
+    <section id="official-networks" class="py-12 bg-slate-950 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+            <div class="text-center space-y-2">
+                <span class="text-xs text-amber-400 font-bold uppercase tracking-wider">لوحات التحكم المباشرة</span>
+                <h3 class="text-xl sm:text-2xl font-black text-white">شبكات الإعلانات الرسمية والمعتمدة</h3>
+                <p class="text-xs text-slate-400">روابط مدراء الإعلانات الرسميين لمن يمتلك حساباً إعلانياً تجارياً رسمياً:</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <a href="https://adsmanager.facebook.com" target="_blank" class="glass-card p-4.5 rounded-2xl flex items-center justify-between border border-slate-800 hover:border-blue-500 transition">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-meta text-2xl text-blue-500"></i>
+                        <div>
+                            <h4 class="text-xs font-bold text-white">Meta Ads</h4>
+                            <span class="text-[10px] text-slate-400">فيسبوك وإنستغرام</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-500"></i>
+                </a>
+
+                <a href="https://ads.tiktok.com" target="_blank" class="glass-card p-4.5 rounded-2xl flex items-center justify-between border border-slate-800 hover:border-cyan-400 transition">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-tiktok text-2xl text-cyan-400"></i>
+                        <div>
+                            <h4 class="text-xs font-bold text-white">TikTok Ads</h4>
+                            <span class="text-[10px] text-slate-400">تيك توك للأعمال</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-500"></i>
+                </a>
+
+                <a href="https://ads.google.com/ups/routing?source=206&subid=xs-ip-gemini-adlt" target="_blank" class="glass-card p-4.5 rounded-2xl flex items-center justify-between border border-slate-800 hover:border-red-500 transition">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-google text-2xl text-red-500"></i>
+                        <div>
+                            <h4 class="text-xs font-bold text-white">Google Ads</h4>
+                            <span class="text-[10px] text-slate-400">بحث ويوتيوب</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-500"></i>
+                </a>
+
+                <a href="https://ads.snapchat.com" target="_blank" class="glass-card p-4.5 rounded-2xl flex items-center justify-between border border-slate-800 hover:border-yellow-400 transition">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-snapchat text-2xl text-yellow-400"></i>
+                        <div>
+                            <h4 class="text-xs font-bold text-white">Snapchat Ads</h4>
+                            <span class="text-[10px] text-slate-400">سناب للأعمال</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-500"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filterable Sponsored Ads Marketplace -->
+    <section id="ads-feed" class="py-14 bg-slate-950 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div>
+                    <span class="bg-amber-500/10 text-amber-400 border border-amber-500/30 text-xs px-3.5 py-1 rounded-full font-bold">سوق الإعلانات النشطة</span>
+                    <h2 class="text-2xl sm:text-3xl font-black text-white mt-2">الإعلانات الممولة المنشورة حالياً</h2>
+                </div>
+
+                <div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0" id="filterTabs">
+                    <button onclick="filterAds('all')" class="filter-btn bg-amber-500 text-slate-950 px-4 py-2 rounded-xl text-xs font-black transition">الكل</button>
+                    <button onclick="filterAds('instagram')" class="filter-btn bg-slate-900 text-slate-300 hover:text-white px-4 py-2 rounded-xl text-xs font-bold transition">إنستغرام</button>
+                    <button onclick="filterAds('tiktok')" class="filter-btn bg-slate-900 text-slate-300 hover:text-white px-4 py-2 rounded-xl text-xs font-bold transition">تيك توك</button>
+                    <button onclick="filterAds('facebook')" class="filter-btn bg-slate-900 text-slate-300 hover:text-white px-4 py-2 rounded-xl text-xs font-bold transition">فيسبوك</button>
+                    <button onclick="filterAds('google')" class="filter-btn bg-slate-900 text-slate-300 hover:text-white px-4 py-2 rounded-xl text-xs font-bold transition">جوجل</button>
+                </div>
+            </div>
+
+            <div id="adsMarketplaceContainer" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-900 text-slate-400 py-12 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <div class="flex items-center justify-center gap-2 text-white font-extrabold text-lg">
+                <i class="fa-solid fa-crown text-amber-400"></i>
+                <span class="gold-text-gradient">منصة أبو نمر للإعلانات الممولة</span>
+            </div>
+            <p class="max-w-md mx-auto text-slate-500 font-medium">تصميم وتطوير المطور <strong class="text-amber-400">أبو نمر</strong> - كافة الخدمات الإعلانية والبرمجية وحملات التسويق المباشر.</p>
+            <div class="pt-4 border-t border-slate-900 text-slate-600 font-bold">
+                جميع الحقوق محفوظة &copy; 2026 - المطور أبو نمر (00905317327802)
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        let selectedPlatform = 'instagram';
+        
+        const defaultAds = [
+            {
+                id: 1,
+                platform: 'instagram',
+                brandName: "معلم دهان وصيانة عامة",
+                title: "🔥 أفضل خدمات الدهان والديكورات الحديثة",
+                caption: "معاينة مجانية بأسعار مناسبة وبأعلى جودة مواد. تواصل عبر الواتساب فوراً!",
+                location: "بورصة - نيلوفر",
+                whatsapp: "00905317327802",
+                imageUrl: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80",
+                budget: "$20 / يومياً",
+                date: "الآن"
+            },
+            {
+                id: 2,
+                platform: 'tiktok',
+                brandName: "ورشة صيانة الكهرباء والسباكة",
+                title: "🔨 أعمال صيانة منزلية فورية وشاملة",
+                caption: "حلول تمديدات كهربائية وصحية وسيراميك بدقة عالية وسرعة في الإنجاز.",
+                location: "بورصة وكافة المناطق",
+                whatsapp: "00905317327802",
+                imageUrl: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80",
+                budget: "$30 / يومياً",
+                date: "منذ ساعة"
+            }
+        ];
+
+        function getStoredAds() {
+            const stored = localStorage.getItem('abunimer_sponsored_ads');
+            if (stored) {
+                try { return JSON.parse(stored); } catch (e) { return defaultAds; }
+            }
+            return defaultAds;
+        }
+
+        let adsList = getStoredAds();
+
+        function selectPlatform(platform) {
+            selectedPlatform = platform;
+            document.querySelectorAll('.platform-btn').forEach(btn => {
+                btn.classList.remove('border-pink-500/80', 'border-cyan-400', 'border-blue-500', 'border-red-500', 'border-yellow-400', 'border-sky-400');
+                btn.classList.add('border-slate-800', 'opacity-60');
+            });
+
+            const activeBtn = document.getElementById(`btn-${platform}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('border-slate-800', 'opacity-60');
+                if (platform === 'instagram') activeBtn.classList.add('border-pink-500/80');
+                else if (platform === 'tiktok') activeBtn.classList.add('border-cyan-400');
+                else if (platform === 'facebook') activeBtn.classList.add('border-blue-500');
+                else if (platform === 'google') activeBtn.classList.add('border-red-500');
+                else if (platform === 'snapchat') activeBtn.classList.add('border-yellow-400');
+                else if (platform === 'telegram') activeBtn.classList.add('border-sky-400');
+            }
+
+            updateLiveSimulator();
+            updateCalculator();
+        }
+
+        function updateLiveSimulator() {
+            const brandName = document.getElementById('adBrandName').value || 'اسم النشاط التجارى';
+            const location = document.getElementById('adLocation').value || 'المنطقة الحالية';
+            const title = document.getElementById('adTitle').value || 'عنوان الإعلان الممول';
+            const caption = document.getElementById('adCaption').value || 'تفاصيل وشرح الإعلان الممول هنا...';
+            const whatsapp = document.getElementById('adWhatsapp').value || '00905317327802';
+            const imageUrl = document.getElementById('adImageUrl').value || 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80';
+
+            document.getElementById('simBrandName').childNodes[0].nodeValue = brandName + ' ';
+            document.getElementById('simAvatarInitials').innerText = brandName.charAt(0) || 'م';
+            document.getElementById('simLocation').innerHTML = `<i class="fa-solid fa-location-dot"></i> ${location}`;
+            document.getElementById('simTitle').innerText = title;
+            document.getElementById('simCaption').innerText = caption;
+            document.getElementById('simImage').src = imageUrl;
+
+            const cleanPhone = whatsapp.replace(/[^0-9]/g, '');
+            const waMsg = encodeURIComponent(`مرحباً، أراسلكم بخصوص الإعلان: ${title}`);
+            document.getElementById('simCtaBtn').href = `https://wa.me/${cleanPhone}?text=${waMsg}`;
+
+            const badge = document.getElementById('simulatorPlatformBadge');
+            const platformTag = document.getElementById('simPlatformTag');
+
+            let pName = 'إنستغرام';
+            let iconClass = 'fa-brands fa-instagram text-pink-500';
+
+            if (selectedPlatform === 'tiktok') {
+                pName = 'تيك توك';
+                iconClass = 'fa-brands fa-tiktok text-cyan-400';
+            } else if (selectedPlatform === 'facebook') {
+                pName = 'فيسبوك';
+                iconClass = 'fa-brands fa-facebook text-blue-500';
+            } else if (selectedPlatform === 'google') {
+                pName = 'جوجل Ads';
+                iconClass = 'fa-brands fa-google text-red-500';
+            } else if (selectedPlatform === 'snapchat') {
+                pName = 'سناب شات';
+                iconClass = 'fa-brands fa-snapchat text-yellow-400';
+            } else if (selectedPlatform === 'telegram') {
+                pName = 'تلغرام';
+                iconClass = 'fa-brands fa-telegram text-sky-400';
+            }
+
+            badge.innerHTML = `<i class="${iconClass}"></i> ${pName}`;
+            platformTag.innerHTML = `<i class="${iconClass}"></i> ${pName}`;
+        }
+
+        function updateCalculator() {
+            const budget = parseFloat(document.getElementById('budgetRange').value);
+            const currency = document.getElementById('currencySelect').value;
+
+            document.getElementById('budgetValueDisplay').innerText = `${budget} ${currency}`;
+
+            const original = Math.round(budget * 1.25);
+            document.getElementById('calcOriginalPrice').innerText = `${original} ${currency}`;
+            document.getElementById('calcDiscountPrice').innerText = `${budget} ${currency}`;
+
+            const minReach = Math.round(budget * 250);
+            const maxReach = Math.round(budget * 600);
+            document.getElementById('calcReach').innerText = `${minReach.toLocaleString()} - ${maxReach.toLocaleString()}`;
+        }
+
+        function handlePublishAd(e) {
+            e.preventDefault();
+
+            const brandName = document.getElementById('adBrandName').value;
+            const location = document.getElementById('adLocation').value;
+            const title = document.getElementById('adTitle').value;
+            const caption = document.getElementById('adCaption').value;
+            const whatsapp = document.getElementById('adWhatsapp').value;
+            const imageUrl = document.getElementById('adImageUrl').value || 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80';
+            const budget = document.getElementById('budgetValueDisplay').innerText;
+
+            // 1. Save locally
+            const newAd = {
+                id: Date.now(),
+                platform: selectedPlatform,
+                brandName: brandName,
+                title: title,
+                caption: caption,
+                location: location,
+                whatsapp: whatsapp,
+                imageUrl: imageUrl,
+                budget: budget,
+                date: "الآن"
+            };
+
+            adsList.unshift(newAd);
+            localStorage.setItem('abunimer_sponsored_ads', JSON.stringify(adsList));
+            renderMarketplaceAds('all');
+
+            // 2. Redirect to Abu Nimer WhatsApp
+            const text = `مرحباً أستاذ أبو نمر، أرغب بتأكيد وطلب إعلان ممول حقيقي مع الخصم:\n\n` +
+                         `📌 *المنصة:* ${selectedPlatform}\n` +
+                         `🏷️ *اسم النشاط:* ${brandName}\n` +
+                         `📝 *عنوان الإعلان:* ${title}\n` +
+                         `📍 *المنطقة:* ${location}\n` +
+                         `💰 *الميزانية المطلوب اعتمادها:* ${budget}\n` +
+                         `📞 *رقم تواصل الزبون:* ${whatsapp}\n\n` +
+                         `يرجى تأكيد الاستلام والبدء بتجهيز الإعلان.`;
+
+            const encodedText = encodeURIComponent(text);
+            window.open(`https://wa.me/905317327802?text=${encodedText}`, '_blank');
+        }
+
+        function renderMarketplaceAds(filter = 'all') {
+            const container = document.getElementById('adsMarketplaceContainer');
+            container.innerHTML = '';
+
+            const filteredAds = filter === 'all' ? adsList : adsList.filter(ad => ad.platform === filter);
+
+            if (filteredAds.length === 0) {
+                container.innerHTML = `<div class="col-span-full text-center py-12 text-slate-500 font-bold">لا توجد إعلانات نشطة حالياً.</div>`;
+                return;
+            }
+
+            filteredAds.forEach(ad => {
+                const cleanPhone = ad.whatsapp.replace(/[^0-9]/g, '');
+                const waMsg = encodeURIComponent(`مرحباً، أراسلكم بخصوص الإعلان: ${ad.title}`);
+                const whatsappUrl = `https://wa.me/${cleanPhone}?text=${waMsg}`;
+
+                const card = document.createElement('div');
+                card.className = "glass-card rounded-2xl overflow-hidden border border-slate-800 flex flex-col justify-between shadow-xl";
+
+                card.innerHTML = `
+                    <div>
+                        <div class="p-4 flex items-center justify-between border-b border-slate-800">
+                            <div>
+                                <h4 class="font-extrabold text-slate-100 text-xs">${ad.brandName}</h4>
+                                <span class="text-[10px] text-slate-400 font-bold"><i class="fa-solid fa-location-dot text-amber-400"></i> ${ad.location}</span>
+                            </div>
+                            <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-amber-500/30 text-amber-400 bg-amber-500/10">
+                                ${ad.platform}
+                            </span>
+                        </div>
+                        <div class="relative h-44 bg-slate-950 overflow-hidden">
+                            <img src="${ad.imageUrl}" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 space-y-2">
+                            <h3 class="font-black text-sm text-white">${ad.title}</h3>
+                            <p class="text-xs text-slate-400 line-clamp-2">${ad.caption}</p>
+                        </div>
+                    </div>
+                    <div class="p-4 pt-0 space-y-3">
+                        <a href="${whatsappUrl}" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-black py-2.5 rounded-xl text-xs flex items-center justify-center gap-2 transition shadow-lg shadow-emerald-950/50">
+                            <i class="fa-brands fa-whatsapp"></i> تواصل عبر الواتساب فوراً
+                        </a>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function filterAds(platform) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('bg-amber-500', 'text-slate-950');
+                btn.classList.add('bg-slate-900', 'text-slate-300');
+            });
+            event.target.classList.remove('bg-slate-900', 'text-slate-300');
+            event.target.classList.add('bg-amber-500', 'text-slate-950');
+            renderMarketplaceAds(platform);
+        }
+
+        window.onload = function() {
+            updateLiveSimulator();
+            updateCalculator();
+            renderMarketplaceAds('all');
+        };
+    </script>
+</body>
+</html>
